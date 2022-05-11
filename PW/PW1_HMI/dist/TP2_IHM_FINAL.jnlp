@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TP2_IHM_FINAL.jnlp">
+  <information>
+    <title>TP2_IHM_FINAL</title>
+    <vendor>valdrin</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TP2_IHM_FINAL.jar" size="45648" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TP2_IHM_FINAL" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="ex07B.Ex07B"  name="TP2_IHM_FINAL" />
+  <update check="always"/>
+</jnlp>

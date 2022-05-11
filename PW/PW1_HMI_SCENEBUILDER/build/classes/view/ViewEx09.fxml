@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="450.0" style="-fx-border-color: black; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerEx09">
+   <children>
+      <VBox fx:id="vbox1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #1376da; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab1" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab1Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="vbox2" alignment="CENTER" layoutX="185.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #1f7cda; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab2" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab2Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="4.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox3" alignment="CENTER" layoutX="235.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #4393dd; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab3" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab3Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="2" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="8.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox4" alignment="CENTER" layoutX="285.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #4d9add; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab4" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab4Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="3" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="12.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox5" alignment="CENTER" layoutX="335.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #59a0da; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab5" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab5Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="4" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="16.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox6" alignment="CENTER" layoutX="370.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #63a4d6; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab6" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab6Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="5" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="20.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox7" alignment="CENTER" layoutX="385.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #83b0d3; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab7" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab7Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="6" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="24.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox8" alignment="CENTER" layoutX="395.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8cbfb6; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab8" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab8Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="7" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="28.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox9" alignment="CENTER" layoutX="403.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #6fb895; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab9" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab9Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="8" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="32.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox10" alignment="CENTER" layoutX="410.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #5bb589; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab10" contentDisplay="CENTER" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab10Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="9" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="36.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox11" alignment="CENTER" layoutX="415.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #45ae79; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab11" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab11Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="40.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox12" alignment="CENTER" layoutX="420.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #3fb578; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab12" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab12Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="44.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox13" alignment="CENTER" layoutX="422.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #046b33; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab13" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab13Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="2" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="48.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox14" alignment="CENTER" layoutX="425.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #7ebf0f; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab14" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab14Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="3" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="52.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox15" alignment="CENTER" layoutX="427.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #b1bc0f; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab15" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab15Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="4" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="56.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox16" alignment="CENTER" layoutX="430.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #b7b22d; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab16" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab16Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="5" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="60.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox17" alignment="CENTER" layoutX="431.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ccc430; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab17" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab17Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="6" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="64.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox18" alignment="CENTER" layoutX="433.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #d69e2c; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab18" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab18Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="7" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="68.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox19" alignment="CENTER" layoutX="435.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ce8a1c; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab19" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab19Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="8" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="72.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vbox20" alignment="CENTER" layoutX="436.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #e0871a; -fx-border-color: black;">
+         <children>
+            <Label fx:id="lab20" contentDisplay="CENTER" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab20Bis" contentDisplay="CENTER" layoutX="54.0" layoutY="120.0" text="9" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="76.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

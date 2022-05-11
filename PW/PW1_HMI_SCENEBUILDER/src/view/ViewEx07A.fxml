@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="root" fx:controller="controller.ControllerEx07A" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox fx:id="westBox" alignment="CENTER" prefHeight="111.0" prefWidth="20.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="westLab1" style="-fx-border-color: black;" text="W" />
+            <Label fx:id="westLab2" style="-fx-border-color: black;" text="E" />
+            <Label fx:id="westLab3" style="-fx-border-color: black;" text="S" />
+            <Label fx:id="westLab4" style="-fx-border-color: black;" text="T" />
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox fx:id="eastBox" alignment="CENTER" prefHeight="111.0" prefWidth="20.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="eastLab1" style="-fx-border-color: black;" text="E" />
+            <Label fx:id="eastLab2" style="-fx-border-color: black;" text="A" />
+            <Label fx:id="eastLab3" style="-fx-border-color: black;" text="S" />
+            <Label fx:id="eastLab4" style="-fx-border-color: black;" text="T" />
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <HBox fx:id="northBox" alignment="TOP_CENTER" prefHeight="10.0" prefWidth="400.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="northLab" text="NORTH" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox fx:id="centerBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="centerLab" text="CENTER" />
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox fx:id="southBox" alignment="CENTER" prefHeight="10.0" prefWidth="400.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="southLab" text="SOUTH" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

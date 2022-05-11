@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="window" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="750.0" style="-fx-border-color: yellow; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerViewBasic">
+   <children>
+      <MenuBar fx:id="menuBar" VBox.vgrow="ALWAYS">
+        <menus>
+          <Menu fx:id="menuFile" mnemonicParsing="false" text="Fichier">
+            <items>
+                  <Menu fx:id="menuExercices" mnemonicParsing="false" text="Exercices">
+                    <items>
+                      <MenuItem fx:id="menuItemEx07A" mnemonicParsing="false" onAction="#onActionMenuItemEx07A" text="Exercice 07-A" />
+                        <MenuItem fx:id="menuItemEx07B" mnemonicParsing="false" onAction="#onActionMenuItemEx07B" text="Exercice 07-B" />
+                        <MenuItem fx:id="menuItemEx08" mnemonicParsing="false" onAction="#onActionMenuItemEx08" text="Exercice 08" />
+                        <MenuItem fx:id="menuItemEx09" mnemonicParsing="false" onAction="#onActionMenuItemEx09" text="Exercice 09" />
+                        <MenuItem fx:id="menuItemEx10" mnemonicParsing="false" onAction="#onActionMenuItemEx10" text="Exercice 10" />
+                    </items>
+                  </Menu>
+              <MenuItem fx:id="menuItemHome" mnemonicParsing="false" onAction="#onActionMenuItemHome" text="Accueil" />
+                  <MenuItem fx:id="menuItemQuit" mnemonicParsing="false" onAction="#onActionMenuItemQuit" text="Quitter" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuDisplay" mnemonicParsing="false" text="Affichage">
+            <items>
+              <MenuItem fx:id="menuItemFullScreen" mnemonicParsing="false" onAction="#onActionMenuItemFullScreen" text="Plein écran" />
+                  <MenuItem fx:id="menuItemMinimize" mnemonicParsing="false" onAction="#onActionMenuItemMinimize" text="Minimiser" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuHelp" mnemonicParsing="false" text="Aide">
+            <items>
+                  <MenuItem fx:id="menuItemContact" mnemonicParsing="false" onAction="#onActionMenuItemContact" text="Contacter" />
+              <MenuItem fx:id="menuItemAboutUs" mnemonicParsing="false" onAction="#onActionMenuItemAboutUs" text="À Propos" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox fx:id="vboxMenu" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="740.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

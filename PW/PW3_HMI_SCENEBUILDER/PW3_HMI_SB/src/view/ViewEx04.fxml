@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-border-color: black; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerEx04">
+   <top>
+      <HBox fx:id="hboxTop" alignment="CENTER" prefHeight="59.0" prefWidth="396.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnPlus5" mnemonicParsing="false" onAction="#onActionBtnPlus5" text="+5" HBox.hgrow="ALWAYS" />
+            <Line fx:id="line" endY="35.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnMinus5" mnemonicParsing="false" onAction="#onActionBtnMinus5" text="-5" HBox.hgrow="ALWAYS" />
+            <Label fx:id="labelTop1" text="     :" HBox.hgrow="ALWAYS" />
+            <Label fx:id="labelTop2" layoutX="262.0" layoutY="31.0" text="10" HBox.hgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+      </HBox>
+   </top>
+   <bottom>
+      <Button fx:id="btnQuit" mnemonicParsing="false" onAction="#onActionBtnQuit" text="Quit" BorderPane.alignment="BASELINE_CENTER" />
+   </bottom>
+   <center>
+      <Pane fx:id="pc" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onMousClickedPc" prefHeight="250.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="40.0" />
+         </BorderPane.margin>
+         <children>
+            <Circle fx:id="circle" centerX="125.0" centerY="125.0" fill="#7700ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
