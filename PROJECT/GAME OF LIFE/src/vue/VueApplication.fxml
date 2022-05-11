@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" alignment="TOP_CENTER" spacing="8.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jeudelavie.controleur.ControleurApplication">
+   <children>
+      <VBox fx:id="leftBox" alignment="TOP_CENTER" prefWidth="210.0" spacing="15.0">
+         <children>
+            <VBox fx:id="boxEdition" minWidth="-Infinity" prefWidth="210.0" style="-fx-border-color: black; -fx-background-color: chartreuse;" VBox.vgrow="NEVER">
+               <children>
+                  <Label fx:id="labTitreEdition" text="Édition du plateau" underline="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="35.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox fx:id="hboxEdition1" alignment="CENTER_LEFT" prefWidth="200.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="labChangeTaille" text="- changer taille plateau :">
+                           <HBox.margin>
+                              <Insets left="11.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtFieldChangeTaille" alignment="CENTER" onAction="#txtFieldChangeTaille" prefWidth="50.0" style="-fx-border-color: black;" text="100" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="btnReset" alignment="CENTER" mnemonicParsing="false" onAction="#btnReset" style="-fx-border-color: black;" text="- réinitialiser le plateau" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="4.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <HBox fx:id="hboxEdition2" alignment="CENTER_LEFT" layoutX="11.0" layoutY="32.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="labInitialisation" text="- initialisation plateau :">
+                           <HBox.margin>
+                              <Insets left="11.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtFieldInitialisation" alignment="CENTER" onAction="#txtFieldInitialisation" prefWidth="50.0" promptText="0..1" style="-fx-border-color: black;" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <VBox fx:id="boxParametre" minWidth="-Infinity" prefWidth="210.0" spacing="5.0" style="-fx-border-color: black; -fx-background-color: chartreuse;" VBox.vgrow="NEVER">
+               <children>
+                  <Label fx:id="labTitreParametre" text="Paramètres du jeu" underline="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="35.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox fx:id="hboxParam1" alignment="CENTER_LEFT" prefWidth="200.0" spacing="20.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="labMortSolitude" text="- mortSolitude :">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="11.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="comboBoxMortSolitude" prefWidth="75.0" promptText="choix" style="-fx-border-color: black;" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hboxParam2" alignment="CENTER_LEFT" prefWidth="200.0" spacing="16.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="labMortAsphyxie" text="- mortAsphyxie :">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="11.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="comboBoxMortAsphyxie" prefWidth="75.0" promptText="choix" style="-fx-border-color: black;" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hboxParam3" alignment="CENTER_LEFT" prefWidth="200.0" spacing="56.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="labVieMin" text="- vieMin :">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="11.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="comboBoxVieMin" prefWidth="75.0" promptText="choix" style="-fx-border-color: black;" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="hboxParam4" alignment="CENTER_LEFT" prefWidth="200.0" spacing="54.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="labVieMax" text="- vieMax :">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="11.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="comboBoxVieMax" prefWidth="75.0" promptText="choix" style="-fx-border-color: black;" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="btnPlayPause" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnPlayPause" prefHeight="45.0" prefWidth="55.0" textFill="#ffe500">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/logoPlay.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Region fx:id="region11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></VBox>
+      <VBox fx:id="centerBox" alignment="TOP_CENTER" /> 
+      <VBox fx:id="rightBox" alignment="TOP_CENTER" minWidth="200.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <VBox fx:id="boxTampon" alignment="CENTER" minHeight="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <ComboBox fx:id="comboBoxModeles" minHeight="-Infinity" minWidth="-Infinity" onAction="#comboBoxModeles" prefHeight="25.0" prefWidth="130.0" promptText="Jeux prédéfinis" style="-fx-background-color: #667bff; -fx-border-color: black;" visibleRowCount="14">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></ComboBox>
+            <Button fx:id="btnCharger" mnemonicParsing="false" onAction="#btnCharger" style="-fx-border-color: black; -fx-background-color: red;" text="Charger">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="labTitleCmpt" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" text="Compteur :" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox fx:id="compteur" alignment="CENTER" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Region fx:id="region1" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" VBox.vgrow="NEVER" />
+            <Button fx:id="btnQuitter" layoutX="45.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnQuitter" style="-fx-border-color: black; -fx-background-color: red;" text="Quitter">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Region maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

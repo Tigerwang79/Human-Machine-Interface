@@ -1,0 +1,18 @@
+Titulaires du groupe :
+	- Baptiste Saint-Léger 	TD2 TP4
+	- Valdrin Salihi	TD2 TP3
+
+Nous espérons que le jeu soit à la hauteur de vos attentes.
+
+Les problèmes rencontrés : 
+		- problème de Thread qui lève des exceptions selon les tours.
+		- problème de d'écriture dans le plateau selon la disposition des cellules.
+
+Le jeu reste néanmoins fonctionnel, pour vérifier la validité du code de la classe Game, 
+il est préférable de lancer une partie avec une dimension plus petite que par défault pour éviter trop d'exception.
+Si vous avez un problème dans le fonctionnement du jeu, vous pouvez vous référencer directement dans le jeu vers le tutoriel dans l'onglet aide.
+
+click gauche		= 	activer/désactiver une cellule
+Shift + click droit	=	coller le tampon sur le curseur dans le plateau de jeu (mode pause)
+
+Bonne game à vous !

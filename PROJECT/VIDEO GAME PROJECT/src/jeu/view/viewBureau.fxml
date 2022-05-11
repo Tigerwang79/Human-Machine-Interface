@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <FlowPane fx:id="fPane" prefHeight="39.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Pane fx:id="paneImg" prefHeight="500.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgV" fitHeight="500.0" fitWidth="1000.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/bureau.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="objet1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" layoutX="680.0" layoutY="290.0" onMouseClicked="#takeObj1" onMouseEntered="#enteredObj1" onMouseExited="#exitedObj1" opacity="0.5" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="151.0" />
+            <Rectangle fx:id="objet2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="768.0" layoutY="107.0" onMouseClicked="#takeObj2" onMouseEntered="#enteredObj2" onMouseExited="#exitedObj2" opacity="0.5" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="112.0" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <TextFlow fx:id="txtFlow" prefHeight="257.0" prefWidth="980.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

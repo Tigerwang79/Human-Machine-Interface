@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <FlowPane fx:id="fPane" prefHeight="39.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Pane fx:id="paneImg" prefHeight="501.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgMaison" fitHeight="502.0" fitWidth="1000.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/maisonVictime.jpg.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgMere" fitHeight="221.0" fitWidth="188.0" layoutX="245.0" layoutY="210.0" onMouseClicked="#talkToMere" onMouseEntered="#mouseEnteredMere" onMouseExited="#mouseExitedMere" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mere.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="objet1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" layoutX="51.0" layoutY="110.0" onMouseClicked="#takeObj1" onMouseEntered="#enteredObj1" onMouseExited="#exitedObj1" opacity="0.5" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="45.0" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <TextFlow fx:id="txtFlow" prefHeight="258.0" prefWidth="982.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

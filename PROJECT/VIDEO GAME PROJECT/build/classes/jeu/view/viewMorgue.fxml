@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane fx:id="boderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <FlowPane fx:id="fPane" prefHeight="39.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Pane fx:id="paneImg" prefHeight="500.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgMorgue" fitHeight="506.0" fitWidth="1000.0" layoutY="-3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Morgue_2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgLegiste" fitHeight="225.0" fitWidth="149.0" layoutX="411.0" layoutY="44.0" onMouseClicked="#talkToLeg" onMouseEntered="#mouseEnteredLeg" onMouseExited="#mouseExitedLeg" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/legiste.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <TextFlow fx:id="txtFlow" prefHeight="257.0" prefWidth="986.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

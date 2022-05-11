@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <FlowPane fx:id="fPane" prefHeight="39.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Pane fx:id="paneImg" prefHeight="500.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgRestaurant" fitHeight="500.0" fitWidth="1000.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/restaurant.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgMaire" fitHeight="149.0" fitWidth="94.0" layoutX="818.0" layoutY="116.0" onMouseClicked="#talkToMaire" onMouseEntered="#mouseEnteredMaire" onMouseExited="#mouseExitedMaire" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/maire.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCuisinier" fitHeight="460.0" fitWidth="434.0" layoutY="40.0" onMouseClicked="#talkToCui" onMouseEntered="#mouseEnteredCui" onMouseExited="#mouseExitedCui" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cuisinier.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <TextFlow fx:id="txtFlow" prefHeight="259.0" prefWidth="985.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="myPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imgV" fitHeight="800.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/bois-sur-suif.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfMonique" editable="false" layoutX="111.0" layoutY="333.0" prefHeight="25.0" prefWidth="187.0" text="&quot;Chez Monique Pas de Panique&quot;" visible="false" />
+      <Button fx:id="buttonMonique" disable="true" layoutX="173.0" layoutY="271.0" mnemonicParsing="false" opacity="0.0" prefHeight="61.0" prefWidth="63.0" text="Button" />
+      <TextField fx:id="tfPont" editable="false" layoutX="95.0" layoutY="171.0" prefHeight="25.0" prefWidth="102.0" text="Pont de Camon" visible="false" />
+      <Button fx:id="buttonPont" disable="true" layoutX="120.0" layoutY="196.0" mnemonicParsing="false" opacity="0.0" prefHeight="44.0" prefWidth="52.0" text="Button" />
+      <TextField fx:id="tfComissariat" editable="false" layoutX="424.0" layoutY="335.0" prefHeight="25.0" prefWidth="94.0" text="Commissariat" visible="false" />
+      <Button fx:id="buttonComissariat" disable="true" layoutX="436.0" layoutY="360.0" mnemonicParsing="false" opacity="0.0" prefHeight="61.0" prefWidth="69.0" text="Button" />
+      <TextField fx:id="tfVictime" editable="false" layoutX="607.0" layoutY="67.0" prefHeight="25.0" prefWidth="102.0" text="Maison victime" visible="false" />
+      <Button fx:id="buttonVictime" disable="true" layoutX="632.0" layoutY="92.0" mnemonicParsing="false" opacity="0.0" prefHeight="44.0" prefWidth="52.0" text="Button" />
+      <TextField fx:id="tfRestaurant" editable="false" layoutX="599.0" layoutY="346.0" prefHeight="25.0" prefWidth="171.0" text="Restaurant &quot;Bol de la Louttre&quot;" visible="false" />
+      <Button fx:id="buttonRestaurant" disable="true" layoutX="641.0" layoutY="370.0" mnemonicParsing="false" opacity="0.0" prefHeight="61.0" prefWidth="78.0" text="Button" />
+      <TextField fx:id="tfMorgue" editable="false" layoutX="87.0" layoutY="92.0" prefHeight="25.0" prefWidth="63.0" text="Morgue" visible="false" />
+      <Button fx:id="buttonMorgue" disable="true" layoutX="24.0" layoutY="79.0" mnemonicParsing="false" opacity="0.0" prefHeight="51.0" prefWidth="63.0" text="Button" />
+      <TextField fx:id="tfBureau" editable="false" layoutX="87.0" layoutY="25.0" prefHeight="25.0" prefWidth="63.0" text="Bureau" visible="false" />
+      <Button fx:id="buttonBureau" disable="true" layoutX="23.0" layoutY="11.0" mnemonicParsing="false" opacity="0.0" prefHeight="51.0" prefWidth="63.0" text="Button" />
+   </children>
+</Pane>

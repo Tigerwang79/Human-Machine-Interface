@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane id="fenetre" fx:id="fenetre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab fx:id="tabGen" text="General">
+      <content>
+        <AnchorPane fx:id="AnchorPaneGen" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+    <Tab id="tabInv" fx:id="tabInv" text="Inventaire">
+      <content>
+        <AnchorPane id="AnchorPaneInv" fx:id="AnchorPaneInv" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView id="table" fx:id="table" layoutX="-2.0" layoutY="-2.0" prefHeight="375.0" prefWidth="606.0">
+                    <columns>
+                      <TableColumn id="tableNom" fx:id="tableNom" prefWidth="97.0" text="Nom" />
+                      <TableColumn id="tableDesc" fx:id="tableDesc" minWidth="0.0" prefWidth="508.0" text="Description" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

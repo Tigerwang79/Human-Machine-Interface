@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <FlowPane fx:id="fPane" prefHeight="39.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Pane fx:id="paneImg" prefHeight="500.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgPont" fitHeight="500.0" fitWidth="1000.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/pont.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgPolicier" fitHeight="249.0" fitWidth="130.0" layoutX="531.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/police.png" />
+               </image>
+            </ImageView>
+            <Polygon fx:id="objet1" fill="WHITE" layoutX="159.0" layoutY="207.0" onMouseClicked="#takeObj1" onMouseEntered="#enteredObj1" onMouseExited="#exitedObj1" opacity="0.5" points="-52.0, 62.0, -19.0, 95.0, -19.0, 43.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+            <Circle fx:id="objet2" fill="WHITE" layoutX="252.0" layoutY="271.0" onMouseClicked="#takeObj2" onMouseEntered="#enteredObj2" onMouseExited="#exitedObj1" opacity="0.5" radius="15.0" stroke="#ffffff1b" strokeType="INSIDE" visible="false" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <TextFlow fx:id="txtFlow" prefHeight="259.0" prefWidth="987.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
